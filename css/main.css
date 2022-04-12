@@ -229,6 +229,14 @@ main{
      text-align: center;
 }
 
+.textoBarra h5{
+    margin-top: 10px;
+     font-size: 30px;
+     font-weight: 800;
+     text-align: center;
+}
+
+
 .textoBarra p{
     margin-top: 20px;
     color:black;
