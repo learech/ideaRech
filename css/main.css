@@ -10,8 +10,6 @@ body{
     padding: 20px; 
 }
 
-
-
 /* menú de navegación*/
 .navbar{
     grid-area: navbar;
@@ -26,8 +24,13 @@ body{
   .navbar li{
     font-family: 'Creepster', cursive;
     font-weight: 400;
-    list-style: none;
+    list-style:none;
   }
+
+  nav ul li:hover{
+      transform: scale(1.2);
+  }
+
 
   a{
       color: white;
@@ -74,7 +77,8 @@ body{
 
 /*Main*/
 main{
-    background:rgb(180, 167, 167);
+    background: linear-gradient(to right, rgba(212,228,239,1) 0%, rgba(177,187,194,1) 100%);;
+    
 }
 
 /*ContenidoUno*/
@@ -118,11 +122,6 @@ main{
     font-weight: 800;
     letter-spacing: 1px;
 }
-
-.contenidoUno{
-    display: none;
-}
-
 
 /*ContenidoDos*/
 .contenidoDos{
@@ -204,7 +203,7 @@ main{
 .barra{
     width: 100%;
     margin-top: 30px;
-    background: aquamarine;
+    background: linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
     border-top:3px solid black;
 }
 
@@ -214,8 +213,7 @@ main{
 }
 
 .imgBarra img{
-    width: 250px;
-    height: 200px;
+    width: 60%;
     margin: 10px;
 }
 
@@ -224,7 +222,7 @@ main{
     text-align: center;
 }
 
-.textoBarra h5{
+.textoBarra h2{
      margin-top: 10px;
      font-size: 30px;
      font-weight: 800;
@@ -259,7 +257,7 @@ main{
 }
 
 .slider{
-   width: 95%;
+   width: 90%;
    margin: auto;
    overflow: hidden;
 }
@@ -278,7 +276,8 @@ main{
 }
 
 .slider img{
-    width: 80%;
+    margin-top: 70px;
+    width: 100%;
 }
 
 @keyframes cambio {
@@ -295,22 +294,151 @@ main{
     100% {margin-left: -300%;}
 }
 
-
+.imgExtra{
+    display: none;
+}
 
 /* Cierre Barra*/
 
 
-/*Derechos de autor*/
-footer{
-    padding: 30px;
-    width: 100%;
-    margin-top: 100px;
-    background:black;
+/*Contacto*/
 
+.bodyContacto{
+    height: 100%;
+    line-height: 1.6;
+    background-image: url(../img/pil-3-1024x680.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed
+}
+
+.contactoTexto{
+    margin: 20px;
+    padding: 10px;
+    display: grid;
+    justify-content: stretch;
+    text-align: center;
+    box-shadow: rgba(0,0,0,0.5);
+    background: rgba(237, 240, 245, 0.692);
+    border-radius: 5px
+}
+
+/*formulario de contacto*/
+.container {
+    max-width: 1189px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contactWrapper {
+    box-shadow: rgba(0,0,0,0.5);
+    background: rgba(237, 240, 245, 0.692);
+}
+
+.contactWrapper > * {
+    padding: 1em;
+}
+
+.contactForm form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contactForm form label {
+    display: block;
+}
+
+.contactForm form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contactForm form .block {
+    grid-column: 1 / 3;
+}
+
+.contactForm form button,
+.contactForm form input,
+.contactForm form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    font-weight: bolder;
+    color:black;
+    border-bottom: 1px solid powderblue;
+}
+
+.contactForm form button {
+    background:crimson;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contactForm form button:hover,
+.contactForm form button:focus {
+    background-color: rgba(237, 240, 245, 0.692) ;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+/* contact info */
+.contactInfo {
+    background: rgba(237, 240, 245, 0.692);
+}
+
+.contactInfo h4, .contactInfo ul, .contactInfo p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.contactImg{
+    border: none;
+    width: 50%;
+}
+
+
+/*Derechos de autor*/
+.footer{
+   width: 100%;
+   display: grid;
+   grid-template-columns: 65% auto;
+   grid-template-rows: 1fr;
+   align-items: center;
+   justify-content: space-between;
+}
+
+
+footer{
+    color: white;
+    background:black;
+}
+
+footer h6{
+    font-size: 16px;
+}
+
+.alCielo{
+    padding: 0;
+    font-size: 16px;
+    text-decoration-style: none;
+    justify-self: end;
+}
+
+footer img{
+    width: 100px;
 }
 
 footer p{
-    font-size: 30px;
+    font-size: 16px;
     font-weight: 800;
     text-align: center;
     color: white;
@@ -350,12 +478,107 @@ footer p{
         display: grid;
         grid-template-areas: "contenidoLogo h1 h1"
     }
+
+    /*contacto*/
+body {
+    padding: 0 4em;
+}
+.contactWrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.contactWrapper > * {
+    padding: 2em;
+}
+.contactInfo h4,
+.contactInfo ul,
+.contactInfo p {
+    text-align: left;
+}
+
+/* sección Nosotros*/
+.nosotrosMain{
+    height: 100vh;
+    background-image: url(../img/pil5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 30px;
+}
+
+.sobreNosotros{
+    margin: 20px;
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    box-shadow: rgba(0,0,0,0.5);
+    background: rgba(237, 240, 245, 0.692);
+    border-radius: 5px;
+}
+
+.sobreNosotros h2{
+    font-size: 40px;
+}
+
+.sobreNosotros p{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+
+
+
 }
 
 @media only screen and (min-width:900px){
     .contenidoUno{
         display: block;
     }
+
+    main{
+        display: grid;
+        grid-template-areas: "header header header"
+                             "barra contenidoDos contenidoDos"
+                             "contenidoUno contenidoUno contenidoUno"
+                             "contenidoTres contenidoTres contenidoTres"
+                             "footer footer footer";
+       grid-template-columns: 1fr;                      
+    }
+
+    header{
+        grid-area: header;
+    }
+
+    .barra{
+        grid-area: barra;
+    }
+
+    .imgExtra{
+        display: block;
+    }
+
+    .imgExtra img{
+        margin-top: 60px;
+        width: 90%;
+    }
+
+    .contenidoUno{
+        grid-area: contenidoUno;
+    }
+
+    .contenidoDos{
+        grid-area: contenidoDos;
+    }
+
+    .contenidoTres{
+        grid-area: contenidoTres;
+    }
+
+    footer{
+        grid-area: footer;
+    }
+
 }
 
 
@@ -364,11 +587,11 @@ footer p{
      main{
          display: grid;
          grid-template-areas: "header header header header"
-                              "barra contenidoDos contenidoDos contenidoDos"
-                              "contenidoUno contenidoUno contenidoUno contenidoUno"
-                              "contenidoTres contenidoTres contenidoTres contenidoTres"
-                              "footer footer footer footer";
-        grid-template-columns: 1fr;                      
+                              "contenidoDos contenidoDos contenidoDos"
+                              "contenidoUno contenidoUno contenidoUno"
+                              "barra contenidoTres contenidoTres"
+                              "footer footer footer";
+        grid-template-columns:  auto;                   
      }
 
      header{
@@ -395,6 +618,10 @@ footer p{
          grid-area: footer;
      }
 
+     header{
+         margin-bottom: 40px;
+     }
+
     .navbar li{
         font-size: 30px;
         margin: 10px 40px 10px 40px;
@@ -405,7 +632,7 @@ footer p{
     }
 
     h1{
-        font-size:60px ;
+        font-size:50px ;
     }
 
     a{
@@ -437,6 +664,10 @@ footer p{
         height: 350px;
     }
 
+    .contenidoDos{
+        width: 100%;
+    }
+
     .textoContenidoDos h3{
         font-size: 40px;
     }
@@ -446,7 +677,12 @@ footer p{
     }
 
     .videoIosu{
-        width: 100%;
+        width: 90%;
+    }
+
+    .parrafoVideo{
+        font-size: 25px;
+        text-align: center;
     }
 
     .textoContenidoTres h4{
@@ -458,33 +694,47 @@ footer p{
         text-align:start;
     }
 
+    .barra{
+        width: 100%;
+    }
+
     .textoBarra h5{
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .textoBarra p{
-        font-size: 25px;
+        font-size: 20px;
         text-align: start;
         margin: 20px;
     }
 
     .imgBarra img{
-        width: 550px;
-        height: 300px;
         margin-top: 50px;
     }
 
     .textoBarra ul li{
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .imgBarra2 img{
-        width: 550px;
-        height: 300px;
-
+        margin-top: 60px;
+        width: 250px;
+        height: 200px;
     }
 
+    .slider {
+        width: 90%;
+    }
 
+    .imgExtra img{
+        margin-top: 80px;
+        margin-bottom: 0;
+        width: 90%;
+    }
+
+    .imgExtra{
+        display: none;
+    }
 }
 
 

@@ -16,7 +16,8 @@
 </head>
 
 <body>
-    <header>
+    <!-- Encabezado (el id se relaciona con un icono al final de la página) -->
+    <header id=irArriba>
 
         <!-- Menú de navegación-->
         <nav class="navbar">
@@ -26,27 +27,28 @@
                 <li> <a href="noticias.html"> Noticias </a></li>
                 <li> <a href="../pages/arte.html"> Arte </a></li>
                 <li> <a href="../pages/nosotros.html"> Nosotros </a></li>
+                <li> <a href="../pages/contacto.html"> Contacto </a></li>
             </ul>
         </nav>
         <!-- Cierre del menú de navegación-->
 
-        <!-- Encabezado -->
+
         <div class="contenidoCabecera">
             <!-- Logo de la página -->
             <div class="contenidoLogo">
-                <img src="../img/kisspng-cemetery-grave-clip-art-cemetery-png-free-download-5a781d496b4933.9039121015178212574395.png"
-                    alt="Logo de la página">
+                <a href="../index.html"> <img src="../img/kisspng-cemetery-grave-clip-art-cemetery-png-free-download-5a781d496b4933.9039121015178212574395.png"
+                    alt="Logo de la página"> </a>
             </div>
 
             <!-- Título de la página-->
             <h1> Más allá del cementerio </h1>
 
-            <!-- Subtítulo-->
-            <p> Recordando a los que ya no están y apoyando a los que aún siguen en pie.</p>
         </div>
 
     </header>
+    <!-- Cierre Encabezado -->
 
+    <!-- Contenido principal -->
     <main>
 
         <aside class="barra">
@@ -55,12 +57,13 @@
 
             <!-- Imagen de la noticia -->
             <div class="imgBarra">
-                <img src="../img/Zona-84-banda.jpg" alt="foto de la banda Zona 84">
+                <img src="../img/Zona-841.jpg" alt="foto de la banda Zona 84">
             </div>
 
+            <!-- contenedor noticia -->
             <div class="textoBarra">
                 <!-- Título de la noticia -->
-                <h5>ROSARIO SALVAJE</h5>
+                <h2>ROSARIO SALVAJE</h2>
 
                 <!-- Texto de la noticia -->
                 <p>
@@ -88,15 +91,45 @@
                     <img src="../img/zona84flyer.jpg" alt="flyer del recital">
                 </div>
 
+                <!-- Animación slider de cuatro imágenes-->
+                <div class="slider">
+                    <ul>
+                        <li><img src="../img/zona 84 2.jpg" alt="disco zona 84"></li>
+
+                        <li><img src="../img/zona 84 3.jpg" alt="disco zona 84"></li>
+
+                        <li><img src="../img/zona 84 4.jpg" alt="disco zona 84"></li>
+
+                        <li><img src="../img/zona 84 5.jpg" alt="disco zona 84"></li>
+                    </ul>
+                </div>
+                <!-- Cierre animación -->
+
             </div>
+            <!-- cierre contenedor -->
 
         </aside>
+        <!-- Cierre Barra -->
 
     </main>
+    <!-- Cierre contenido principal -->
 
+    <!-- Derechos de autor -->
     <footer>
-        <p> Todos los derechos reservados </p>
+        <section class="footer">
+
+            <div>
+                <h3> Todos los derechos reservados. Rosario, Argentina. </h3>
+            </div>
+            <!-- ícono para presionar y volver arriba -->
+            <div> <a class="alCielo" href="#irArriba">Ir al cielo <img
+                        src="../img/kisspng-portable-network-graphics-cemetery-gates-image-tra-cemetery-gates-png-transparent-images-png-all-5d05c00fe1d880.6156706415606579359251.png"
+                        alt=""></a>
+            </div>
+
+        </section>
     </footer>
+    <!-- Cierre de los derechos de autor -->
 
 </body>
 
