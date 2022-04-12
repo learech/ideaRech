@@ -300,13 +300,44 @@ main{
 
 /* Cierre Barra*/
 
+/* sección Nosotros*/
+.nosotrosMain{
+    height: 100vh;
+    background-image: url(../img/pil5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 30px;
+}
+
+.sobreNosotros{
+    margin: 20px;
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    box-shadow: rgba(0,0,0,0.5);
+    background: rgba(237, 240, 245, 0.692);
+    border-radius: 5px;
+}
+
+.sobreNosotros h2{
+    font-size: 40px;
+}
+
+.sobreNosotros p{
+    font-size: 30px;
+    font-weight: 800;
+}
+/*-- cierre sección Nosotros*/
+
 
 /*Contacto*/
 
-.bodyContacto{
+.mainContacto{
     height: 100%;
     line-height: 1.6;
-    background-image: url(../img/pil-3-1024x680.jpeg);
+    background-image: url(../img/pil1.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed
@@ -496,35 +527,7 @@ body {
     text-align: left;
 }
 
-/* sección Nosotros*/
-.nosotrosMain{
-    height: 100vh;
-    background-image: url(../img/pil5.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin-top: 30px;
-}
 
-.sobreNosotros{
-    margin: 20px;
-    padding: 10px;
-    display: grid;
-    justify-content: center;
-    text-align: center;
-    box-shadow: rgba(0,0,0,0.5);
-    background: rgba(237, 240, 245, 0.692);
-    border-radius: 5px;
-}
-
-.sobreNosotros h2{
-    font-size: 40px;
-}
-
-.sobreNosotros p{
-    font-size: 30px;
-    font-weight: 800;
-}
 
 
 
