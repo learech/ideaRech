@@ -119,6 +119,10 @@ main{
     letter-spacing: 1px;
 }
 
+.contenidoUno{
+    display: none;
+}
+
 
 /*ContenidoDos*/
 .contenidoDos{
@@ -253,6 +257,46 @@ main{
     height: 200px;
     margin: 10px;
 }
+
+.slider{
+   width: 95%;
+   margin: auto;
+   overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 20s infinite alternate linear;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 80%;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+
+
 /* Cierre Barra*/
 
 
@@ -307,6 +351,13 @@ footer p{
         grid-template-areas: "contenidoLogo h1 h1"
     }
 }
+
+@media only screen and (min-width:900px){
+    .contenidoUno{
+        display: block;
+    }
+}
+
 
 @media only screen and (min-width:1024px){
 
@@ -369,6 +420,11 @@ footer p{
     .textoContenidoUno h2{
         font-size: 40px;
         font-weight: 900;
+    }
+
+    .textoContenidoUno, .subtitleP{
+        font-size: 10px;
+        margin: 30px;
     }
 
     .textoContenidoUno p{
